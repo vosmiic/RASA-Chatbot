@@ -10,10 +10,6 @@
         "text": "hi"
       },
       {
-        "intent": "greeting",
-        "text": "hello"
-      },
-      {
         "intent": "goodbye",
         "text": "bye"
       },
@@ -40,6 +36,78 @@
       {
         "intent": "mood_sad",
         "text": "not good"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 28,
+            "end": 36,
+            "value": "Brighton",
+            "entity": "location"
+          }
+        ],
+        "text": "what is the weather like in Brighton"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "Brighton",
+            "entity": "location"
+          }
+        ],
+        "text": "weather in Brighton"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "London",
+            "entity": "location"
+          }
+        ],
+        "text": "whats the weather like in London"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "Paris",
+            "entity": "location"
+          }
+        ],
+        "text": "how is the weather in Paris"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 33,
+            "end": 43,
+            "value": "Manchester",
+            "entity": "location"
+          }
+        ],
+        "text": "show me the weather forecast for Manchester"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 32,
+            "end": 42,
+            "value": "California",
+            "entity": "location"
+          }
+        ],
+        "text": "show me the weather forecast in California"
       }
     ],
     "regex_features": [],

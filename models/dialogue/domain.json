@@ -4,12 +4,21 @@
     "intent_greeting",
     "intent_mood_happy",
     "intent_mood_sad",
+    "intent_weather",
+    "entity_location",
+    "slot_location_0",
+    "slot_weather_0",
     "prev_action_listen",
     "prev_action_restart",
     "prev_action_default_fallback",
+    "prev_action_deactivate_form",
     "prev_utter_greeting",
     "prev_utter_happy",
     "prev_utter_sad",
-    "prev_utter_goodbye"
+    "prev_utter_goodbye",
+    "prev_action_weather",
+    "prev_utter_test",
+    "prev_action_test",
+    "prev_utter_weather"
   ]
 }

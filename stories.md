@@ -1,6 +1,7 @@
 ## Greeting
 * greeting
     - utter_greeting
+    - action_test
 
 ## User is happy
 * mood_happy
@@ -13,3 +14,8 @@
 ## Goodbye
 * goodbye
     - utter_goodbye
+    
+## Weather
+* weather{"location": "Caracas"}
+    - action_weather
+

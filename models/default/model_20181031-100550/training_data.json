@@ -1,0 +1,69 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greeting",
+        "text": "hey"
+      },
+      {
+        "intent": "greeting",
+        "text": "hi"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "mood_happy",
+        "text": "happy"
+      },
+      {
+        "intent": "mood_happy",
+        "text": "great"
+      },
+      {
+        "intent": "mood_sad",
+        "text": "sad"
+      },
+      {
+        "intent": "mood_sad",
+        "text": "not good"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 28,
+            "end": 36,
+            "value": "Brighton",
+            "entity": "location"
+          }
+        ],
+        "text": "what is the weather like in Brighton"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "Brighton",
+            "entity": "location"
+          }
+        ],
+        "text": "weather in Brighton"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

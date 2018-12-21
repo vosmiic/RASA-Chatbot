@@ -3,12 +3,17 @@ intents:
   - goodbye
   - mood_happy
   - mood_sad
+  - weather
 
-actions:
-  - utter_greeting
-  - utter_happy
-  - utter_sad
-  - utter_goodbye
+entities:
+- location
+
+slots:
+  location:
+    type: text
+
+  weather:
+    type: text
 
 templates:
   utter_greeting:
@@ -22,3 +27,19 @@ templates:
 
   utter_goodbye:
     - text: "Goodbye!"
+
+  utter_test:
+    - text: "Slot value: {location}"
+
+  utter_weather:
+    - text: "{weather}"
+
+actions:
+  - utter_greeting
+  - utter_happy
+  - utter_sad
+  - utter_goodbye
+  - action_weather
+  - utter_test
+  - action_test
+  - utter_weather
