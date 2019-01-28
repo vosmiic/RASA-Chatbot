@@ -4,9 +4,14 @@ intents:
   - mood_happy
   - mood_sad
   - weather
+  - worklocation
+  - homelocation
+
 
 entities:
 - location
+- worklocation
+- homelocation
 
 slots:
   location:
@@ -14,6 +19,19 @@ slots:
 
   weather:
     type: text
+
+  homelocation:
+    type: unfeaturized
+    auto_fill: false
+
+  worklocation:
+    type: unfeaturized
+    auto_fill: false
+
+  requested_slot:
+    type: unfeaturized
+
+
 
 templates:
   utter_greeting:
@@ -28,11 +46,25 @@ templates:
   utter_goodbye:
     - text: "Goodbye!"
 
+  utter_ask_worklocation:
+    - text: "Please enter the postcode of your work"
+
+  utter_ask_homelocation:
+    - text: "Please enter the postcode of your home"
+
   utter_test:
-    - text: "Slot value: {location}"
+    - text: "Slot value: {worklocation}"
 
   utter_weather:
     - text: "{weather}"
+
+  utter_ask_continue:
+    - text: "Are you sure you want to stop this?"
+
+  utter_stop:
+    - text: "I understand, stopping"
+
+
 
 actions:
   - utter_greeting
@@ -43,3 +75,9 @@ actions:
   - utter_test
   - action_test
   - utter_weather
+  - utter_stop
+  - utter_ask_continue
+  - action_breakfast
+
+forms:
+  - commute_form
