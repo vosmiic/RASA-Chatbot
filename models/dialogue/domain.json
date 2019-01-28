@@ -2,14 +2,10 @@
   "states": [
     "intent_goodbye",
     "intent_greeting",
-    "intent_homelocation",
     "intent_mood_happy",
     "intent_mood_sad",
     "intent_weather",
-    "intent_worklocation",
     "entity_location",
-    "entity_worklocation",
-    "entity_homelocation",
     "slot_location_0",
     "slot_weather_0",
     "prev_action_listen",
@@ -23,10 +19,6 @@
     "prev_action_weather",
     "prev_utter_test",
     "prev_action_test",
-    "prev_utter_weather",
-    "prev_utter_stop",
-    "prev_utter_ask_continue",
-    "prev_commute_form",
-    "active_form_commute_form"
+    "prev_utter_weather"
   ]
 }

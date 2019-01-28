@@ -1,11 +1,4 @@
 {
   "max_history": 2,
-  "lookup": {
-    "eJyLri4oSi2LT87PzS0tSY1Pyy/KtVIw1DOo1VGoTkwuySyDiGEq0FHIzCtJzSuJLy7JL4CKgI0C6crPi8/JLAZKQ8yKBQCTGySU": "commute_form",
-    "eJyLri4oSi2LLy0pSS2KTyzOjk/OzyvJzCtNtVIw1DOo1VGoTkwuySxLjU/LL8oFSubmlpZAOGAFOgqZeSWpeSXxeflQPtg4kJ78vPiczGKgJMSkWABI6yY0": "commute_form",
-    "eJyLri4oSi2LLy0pSS2KTyzOjk/OzyvJzCtNtVIw1DOo1VGoTkwuySxLjU/LL8oFSubmlpZAOGAFOgqZeSWpeSXxlanFUAGweSBN+XnxOZnFQFmIUbEAc58mqA==": "commute_form",
-    "eJyLri4oSi2LT87PzS0tSY1Pyy/KtVIw1DOo1VGoTkwuySyDiGEq0FHIzCtJzSuJLy7JL4CKgI0C6crPi8/JLAZKQyWKc/JL4nPykxPBUgYQG2IBDYkr0g==": "commute_form",
-    "eJwtjFEKgCAQBa/iASTst6tELCIbSLobuvoj3T0zP4d5b/Z2J6xQRDCBzRc4JvFUcFPrYh6tmnXiK8LJKXYZY5EfxkArT4IkQDx55L4PEwSfu5wiBxYI7OxQ5u8fL+cKLXI=": "commute_form",
-    "eJwtjV0KgCAQhK/iASLqtatELCIbLOlu6BqEdPdMe5z55mctZ8QLsipGsOkAJ6zEGRczj9MzmGKd0oWwSwwVhpC1ixYYDLEiK9yYfqPtfSVh8JQq/UHyouDF2YamfrC9G8Ut5g==": "commute_form"
-  }
+  "lookup": {}
 }

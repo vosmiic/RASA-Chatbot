@@ -9,16 +9,11 @@ actions:
 - utter_test
 - action_test
 - utter_weather
-- utter_stop
-- utter_ask_continue
 config:
   store_entities_as_slots: true
 entities:
 - location
-- worklocation
-- homelocation
-forms:
-- commute_form
+forms: []
 intents:
 - greeting:
     use_entities: true
@@ -30,38 +25,16 @@ intents:
     use_entities: true
 - weather:
     use_entities: true
-- worklocation:
-    use_entities: true
-- homelocation:
-    use_entities: true
 slots:
-  homelocation:
-    auto_fill: false
-    initial_value: null
-    type: rasa_core.slots.UnfeaturizedSlot
   location:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
-  requested_slot:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.UnfeaturizedSlot
   weather:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
-  worklocation:
-    auto_fill: false
-    initial_value: null
-    type: rasa_core.slots.UnfeaturizedSlot
 templates:
-  utter_ask_continue:
-  - text: Are you sure you want to stop this?
-  utter_ask_homelocation:
-  - text: Please enter the postcode of your home
-  utter_ask_worklocation:
-  - text: Please enter the postcode of your work
   utter_goodbye:
   - text: Goodbye!
   utter_greeting:
@@ -70,9 +43,7 @@ templates:
   - text: Great! I hope you stay happy.
   utter_sad:
   - text: Oh that isn't good! I hope you feel better later.
-  utter_stop:
-  - text: I understand, stopping
   utter_test:
-  - text: 'Slot value: {worklocation}'
+  - text: 'Slot value: {location}'
   utter_weather:
   - text: '{weather}'

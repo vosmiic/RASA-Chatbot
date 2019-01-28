@@ -5,35 +5,23 @@
         "location"
       ]
     },
-    "utter_happy": {
-      "slots": []
-    },
-    "commute_form": {
-      "slots": []
-    },
-    "utter_test": {
-      "slots": []
-    },
-    "action_deactivate_form": {
-      "slots": []
-    },
-    "utter_stop": {
-      "slots": []
-    },
-    "utter_sad": {
+    "utter_goodbye": {
       "slots": []
     },
     "action_test": {
       "slots": []
     },
-    "utter_goodbye": {
+    "action_weather": {
       "slots": []
     },
-    "action_weather": {
+    "utter_sad": {
+      "slots": []
+    },
+    "utter_happy": {
       "slots": []
     }
   },
-  "rasa_core": "0.12.4",
+  "rasa_core": "0.12.3",
   "python": "3.6.7",
   "max_histories": [
     5,
@@ -48,5 +36,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190128-102951"
+  "trained_at": "20181221-124655"
 }

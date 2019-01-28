@@ -117,66 +117,6 @@
             "entity": "location"
           }
         ]
-      },
-      {
-        "text": "how long will my work journey take me today",
-        "intent": "workdistance",
-        "entities": [
-          {
-            "start": 17,
-            "end": 21,
-            "value": "work",
-            "entity": "work"
-          }
-        ]
-      },
-      {
-        "text": "how long will my work journey take me this morning",
-        "intent": "workdistance",
-        "entities": [
-          {
-            "start": 17,
-            "end": 21,
-            "value": "work",
-            "entity": "work"
-          }
-        ]
-      },
-      {
-        "text": "how long will my work journey take me",
-        "intent": "workdistance",
-        "entities": [
-          {
-            "start": 17,
-            "end": 22,
-            "value": "work ",
-            "entity": "work"
-          }
-        ]
-      },
-      {
-        "text": "what is the length of my journey to work today",
-        "intent": "workdistance",
-        "entities": [
-          {
-            "start": 36,
-            "end": 40,
-            "value": "work",
-            "entity": "work"
-          }
-        ]
-      },
-      {
-        "text": "how many minutes will it take to get to work",
-        "intent": "workdistance",
-        "entities": [
-          {
-            "start": 40,
-            "end": 44,
-            "value": "work",
-            "entity": "work"
-          }
-        ]
       }
     ]
   }
