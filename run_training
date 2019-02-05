@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/bin/bash run_train_dialogue_model
+
+/bin/bash run_train_nlu_model_md

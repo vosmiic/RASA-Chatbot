@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/storage/venvs/final-year-project/bin/python -m rasa_core.train -d domain.yml -s stories.md -o models/dialogue
