@@ -7,6 +7,7 @@ from rasa_core_sdk.events import SlotSet, UserUtteranceReverted
 from .getWeather import getLocationWeather
 from .getLocation import getAPI
 from .getMapsDistance import getDistance
+from .breakfastSuggestion import getRandom, addToCsv
 
 
 class ActionWeather(Action):
@@ -58,4 +59,32 @@ class CommuteForm(FormAction):
 
         dispatcher.utter_message(getDistance(tracker.get_slot("homelocation"), tracker.get_slot("worklocation")))
 
+        return []
+
+
+class ActionSuggestBreakfast(Action):
+    def name(self):
+        return "action_suggestbreakfast"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        dispatcher.utter_message(getRandom())
+        return
+
+
+class BreakfastForm(FormAction):
+    def name(self):
+        return "breakfast_form"
+
+    def required_slots(self, tracker):
+        return ["breakfast"]
+
+    def submit(self, dispatcher, tracker, domain):
+        dispatcher.utter_message(addToCsv(tracker.get_slot("breakfast")))
+        #for slot in tracker.slots:
+        #    if slot == tracker.get_slot("breakfast"):
+        #        SlotSet(slot, None)
         return []

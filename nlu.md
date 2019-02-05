@@ -77,6 +77,23 @@
 - suggest me something to eat
 - what should I have to eat?
 
+## intent:addtobreakfast
+- add [cereal](breakfast) to breakfast suggestions
+- add [toast](breakfast) to breakfast
+- can I add something to the breakfast suggestions?
+- how do i add something to the breakfast suggestion list?
+- could you add [weetbix](breakfast) to the breakfast list
+- can you put [cocopops](breakfast) in the breakfast suggestion list
+- is there anyway to add to the breakfast suggestions list
+- where do you add a suggestion to the breakfast list?
+- add to breakfast suggestions
+- please add to breakfast suggestions
+- how add to breakfast suggestions
+
+## intent:breakfast
+- [weetbix](breakfast)
+- [beans](breakfast)
+
 ## intent:no
 - no
 - nah

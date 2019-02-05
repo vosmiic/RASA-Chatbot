@@ -550,6 +550,126 @@
         "text": "SE3 8SE"
       },
       {
+        "intent": "breakfastsuggestion",
+        "text": "suggest me something for breakfast"
+      },
+      {
+        "intent": "breakfastsuggestion",
+        "text": "what should I have for breakfast?"
+      },
+      {
+        "intent": "breakfastsuggestion",
+        "text": "what should I have for breakfast"
+      },
+      {
+        "intent": "breakfastsuggestion",
+        "text": "suggest me something to eat"
+      },
+      {
+        "intent": "breakfastsuggestion",
+        "text": "what should I have to eat?"
+      },
+      {
+        "intent": "addtobreakfast",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "cereal",
+            "entity": "breakfast"
+          }
+        ],
+        "text": "add cereal to breakfast suggestions"
+      },
+      {
+        "intent": "addtobreakfast",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "toast",
+            "entity": "breakfast"
+          }
+        ],
+        "text": "add toast to breakfast"
+      },
+      {
+        "intent": "addtobreakfast",
+        "text": "can I add something to the breakfast suggestions?"
+      },
+      {
+        "intent": "addtobreakfast",
+        "text": "how do i add something to the breakfast suggestion list?"
+      },
+      {
+        "intent": "addtobreakfast",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "weetbix",
+            "entity": "breakfast"
+          }
+        ],
+        "text": "could you add weetbix to the breakfast list"
+      },
+      {
+        "intent": "addtobreakfast",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "cocopops",
+            "entity": "breakfast"
+          }
+        ],
+        "text": "can you put cocopops in the breakfast suggestion list"
+      },
+      {
+        "intent": "addtobreakfast",
+        "text": "is there anyway to add to the breakfast suggestions list"
+      },
+      {
+        "intent": "addtobreakfast",
+        "text": "where do you add a suggestion to the breakfast list?"
+      },
+      {
+        "intent": "addtobreakfast",
+        "text": "add to breakfast suggestions"
+      },
+      {
+        "intent": "addtobreakfast",
+        "text": "please add to breakfast suggestions"
+      },
+      {
+        "intent": "addtobreakfast",
+        "text": "how add to breakfast suggestions"
+      },
+      {
+        "intent": "breakfast",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "weetbix",
+            "entity": "breakfast"
+          }
+        ],
+        "text": "weetbix"
+      },
+      {
+        "intent": "breakfast",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "beans",
+            "entity": "breakfast"
+          }
+        ],
+        "text": "beans"
+      },
+      {
         "intent": "no",
         "text": "no"
       },

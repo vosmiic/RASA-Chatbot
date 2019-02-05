@@ -1,5 +1,6 @@
 {
   "states": [
+    "intent_addtobreakfast",
     "intent_goodbye",
     "intent_greeting",
     "intent_homelocation",
@@ -10,12 +11,16 @@
     "entity_location",
     "entity_worklocation",
     "entity_homelocation",
+    "entity_breakfast",
     "slot_location_0",
     "slot_weather_0",
     "prev_action_listen",
     "prev_action_restart",
     "prev_action_default_fallback",
     "prev_action_deactivate_form",
+    "prev_action_revert_fallback_events",
+    "prev_action_default_ask_affirmation",
+    "prev_action_default_ask_rephrase",
     "prev_utter_greeting",
     "prev_utter_happy",
     "prev_utter_sad",
@@ -26,7 +31,10 @@
     "prev_utter_weather",
     "prev_utter_stop",
     "prev_utter_ask_continue",
+    "prev_action_suggestbreakfast",
     "prev_commute_form",
-    "active_form_commute_form"
+    "prev_breakfast_form",
+    "active_form_commute_form",
+    "active_form_breakfast_form"
   ]
 }

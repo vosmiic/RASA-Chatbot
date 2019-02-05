@@ -11,14 +11,17 @@ actions:
 - utter_weather
 - utter_stop
 - utter_ask_continue
+- action_suggestbreakfast
 config:
   store_entities_as_slots: true
 entities:
 - location
 - worklocation
 - homelocation
+- breakfast
 forms:
 - commute_form
+- breakfast_form
 intents:
 - greeting:
     use_entities: true
@@ -34,7 +37,13 @@ intents:
     use_entities: true
 - homelocation:
     use_entities: true
+- addtobreakfast:
+    use_entities: true
 slots:
+  breakfast:
+    auto_fill: false
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   homelocation:
     auto_fill: false
     initial_value: null
@@ -56,6 +65,8 @@ slots:
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
 templates:
+  utter_ask_breakfast:
+  - text: Please enter your breakfast suggestion
   utter_ask_continue:
   - text: Are you sure you want to stop this?
   utter_ask_homelocation:

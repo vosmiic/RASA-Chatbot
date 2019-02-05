@@ -48,7 +48,13 @@
 
 ## Breakfast suggestion
 * breakfastsuggestion
-    - action_breakfast
+    - action_suggestbreakfast
+
+## Add to breakfast list form
+* addtobreakfast
+    - breakfast_form
+    - form{"name": "breakfast_form"}
+    - form{"name": null}
 
 ## test
 * test
