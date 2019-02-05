@@ -2,3 +2,7 @@
 common problems.txt
 
 *.log
+*.bat
+*.yml
+*.xml
+
