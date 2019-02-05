@@ -88,3 +88,16 @@ class BreakfastForm(FormAction):
         #    if slot == tracker.get_slot("breakfast"):
         #        SlotSet(slot, None)
         return []
+
+
+class ActionWipeBreakfastSlot(Action):
+    def name(self):
+        return "action_wipebreakfast"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+
+        return [SlotSet("breakfast", None)]

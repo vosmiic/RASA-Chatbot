@@ -11,7 +11,9 @@ actions:
 - utter_weather
 - utter_stop
 - utter_ask_continue
+- utter_breakfast
 - action_suggestbreakfast
+- action_wipebreakfast
 config:
   store_entities_as_slots: true
 entities:
@@ -38,6 +40,18 @@ intents:
 - homelocation:
     use_entities: true
 - addtobreakfast:
+    use_entities: true
+- breakfastsuggestion:
+    use_entities: true
+- test:
+    use_entities: true
+- mood_affirm:
+    use_entities: true
+- mood_deny:
+    use_entities: true
+- stop:
+    use_entities: true
+- workdistance:
     use_entities: true
 slots:
   breakfast:
@@ -73,6 +87,8 @@ templates:
   - text: Please enter the postcode of your home
   utter_ask_worklocation:
   - text: Please enter the postcode of your work
+  utter_breakfast:
+  - text: '{breakfast}'
   utter_goodbye:
   - text: Goodbye!
   utter_greeting:

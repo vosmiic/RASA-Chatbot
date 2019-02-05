@@ -286,6 +286,30 @@
         "text": "testing"
       },
       {
+        "intent": "test",
+        "text": "test"
+      },
+      {
+        "intent": "test",
+        "text": "test"
+      },
+      {
+        "intent": "test",
+        "text": "testing"
+      },
+      {
+        "intent": "test",
+        "text": "tester"
+      },
+      {
+        "intent": "test",
+        "text": "tast"
+      },
+      {
+        "intent": "test",
+        "text": "testong"
+      },
+      {
         "intent": "postcode",
         "entities": [
           {
@@ -670,47 +694,47 @@
         "text": "beans"
       },
       {
-        "intent": "no",
+        "intent": "mood_deny",
         "text": "no"
       },
       {
-        "intent": "no",
+        "intent": "mood_deny",
         "text": "nah"
       },
       {
-        "intent": "no",
+        "intent": "mood_deny",
         "text": "nope"
       },
       {
-        "intent": "no",
+        "intent": "mood_deny",
         "text": "negative"
       },
       {
-        "intent": "no",
+        "intent": "mood_deny",
         "text": "no thanks"
       },
       {
-        "intent": "no",
+        "intent": "mood_deny",
         "text": "no thank you"
       },
       {
-        "intent": "yes",
+        "intent": "mood_affirm",
         "text": "yes"
       },
       {
-        "intent": "yes",
+        "intent": "mood_affirm",
         "text": "aye"
       },
       {
-        "intent": "yes",
+        "intent": "mood_affirm",
         "text": "yup"
       },
       {
-        "intent": "yes",
+        "intent": "mood_affirm",
         "text": "yeah"
       },
       {
-        "intent": "yes",
+        "intent": "mood_affirm",
         "text": "yep"
       },
       {

@@ -31,7 +31,7 @@
     - form{"name": "commute_form"}
 * stop
     - utter_ask_continue
-* no
+* mood_deny
     - commute_form
     - form{"name": null}
 
@@ -41,7 +41,7 @@
     - form{"name": "commute_form"}
 * stop
     - utter_ask_continue
-* yes
+* mood_affirm
     - action_deactivate_form
     - form{"name": null}
     - utter_stop
@@ -56,6 +56,10 @@
     - form{"name": "breakfast_form"}
     - form{"name": null}
 
+    - action_wipebreakfast
+
 ## test
 * test
-    - utter_test
+    - action_wipebreakfast
+    - utter_breakfast
+

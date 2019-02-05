@@ -1,93 +1,88 @@
+%YAML 1.1
+---
+
 intents:
-  - greeting
-  - goodbye
-  - mood_happy
-  - mood_sad
-  - weather
-  - worklocation
-  - homelocation
-  - addtobreakfast
-
-
-entities:
-- location
+- breakfast
+- addtobreakfast
+- greeting
+- goodbye
+- mood_happy
+- mood_sad
+- weather
 - worklocation
 - homelocation
+- breakfastsuggestion
+- test
+- mood_affirm
+- mood_deny
+- stop
+- workdistance
+
+entities:
+- homelocation
+- worklocation
 - breakfast
+- location
 
 slots:
-  location:
-    type: text
-
-  weather:
-    type: text
-
-  homelocation:
-    type: unfeaturized
-    auto_fill: false
-
-  worklocation:
-    type: unfeaturized
-    auto_fill: false
-
-  breakfast:
-    type: unfeaturized
-    auto_fill: false
-
-  requested_slot:
-    type: unfeaturized
-
+   breakfast:
+     auto_fill: false
+     type: unfeaturized
+   homelocation:
+     auto_fill: false
+     type: unfeaturized
+   location:
+     type: text
+   requested_slot:
+     type: unfeaturized
+   weather:
+     type: text
+   worklocation:
+     auto_fill: false
+     type: unfeaturized
 
 
 templates:
-  utter_greeting:
-    - text: "Hello! How are you feeling today?"
-
-  utter_happy:
-    - text: "Great! I hope you stay happy."
-
-  utter_sad:
-    - text: "Oh that isn't good! I hope you feel better later."
-
-  utter_goodbye:
-    - text: "Goodbye!"
-
-  utter_ask_worklocation:
-    - text: "Please enter the postcode of your work"
-
-  utter_ask_homelocation:
-    - text: "Please enter the postcode of your home"
-
-  utter_test:
-    - text: "Slot value: {worklocation}"
-
-  utter_weather:
-    - text: "{weather}"
-
   utter_ask_breakfast:
-    - text: "Please enter your breakfast suggestion"
-
+  - text: Please enter your breakfast suggestion
   utter_ask_continue:
-    - text: "Are you sure you want to stop this?"
-
+  - text: Are you sure you want to stop this?
+  utter_ask_homelocation:
+  - text: Please enter the postcode of your home
+  utter_ask_worklocation:
+  - text: Please enter the postcode of your work
+  utter_breakfast:
+  - text: '{breakfast}'
+  utter_goodbye:
+  - text: Goodbye!
+  utter_greeting:
+  - text: Hello! How are you feeling today?
+  utter_happy:
+  - text: Great! I hope you stay happy.
+  utter_sad:
+  - text: Oh that isn't good! I hope you feel better later.
   utter_stop:
-    - text: "I understand, stopping"
-
-
+  - text: I understand, stopping
+  utter_test:
+  - text: 'Slot value: {worklocation}'
+  utter_weather:
+  - text: '{weather}'
 
 actions:
-  - utter_greeting
-  - utter_happy
-  - utter_sad
-  - utter_goodbye
-  - action_weather
-  - utter_test
-  - action_test
-  - utter_weather
-  - utter_stop
-  - utter_ask_continue
-  - action_suggestbreakfast
+- action_wipebreakfast
+- action_weather
+- utter_greeting
+- utter_breakfast
+- action_suggestbreakfast
+- utter_sad
+- action_test
+- utter_test
+- utter_weather
+- utter_stop
+- utter_happy
+- utter_goodbye
+- utter_ask_continue
 
 forms:
-  - commute_form
-  - breakfast_form
+- commute_form
+- breakfast_form

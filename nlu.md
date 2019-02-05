@@ -45,6 +45,12 @@
 ## intent:test
 - test
 - testing
+- test
+- test
+- testing
+- tester
+- tast
+- testong
 
 ## intent:postcode
 - [BN25 2DS](worklocation)
@@ -94,7 +100,7 @@
 - [weetbix](breakfast)
 - [beans](breakfast)
 
-## intent:no
+## intent:mood_deny
 - no
 - nah
 - nope
@@ -102,7 +108,7 @@
 - no thanks
 - no thank you
 
-## intent:yes
+## intent:mood_affirm
 - yes
 - aye
 - yup

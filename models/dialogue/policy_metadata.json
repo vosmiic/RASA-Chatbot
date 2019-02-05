@@ -21,6 +21,11 @@
       "slots": []
     },
     "breakfast_form": {
+      "slots": [
+        "breakfast"
+      ]
+    },
+    "action_wipebreakfast": {
       "slots": []
     },
     "action_test": {
@@ -35,7 +40,7 @@
     "utter_happy": {
       "slots": []
     },
-    "utter_test": {
+    "utter_breakfast": {
       "slots": []
     }
   },
@@ -53,7 +58,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190204-135433",
+  "trained_at": "20190205-152910",
   "rasa_core": "0.13.1",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"
