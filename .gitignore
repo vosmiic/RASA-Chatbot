@@ -3,6 +3,7 @@ common problems.txt
 
 *.log
 *.bat
-*.yml
 *.xml
+*.iml
+.idea
 

@@ -18,8 +18,8 @@ def getRandom():
     dataSet = set()
 
     with open('actions/storage/breakfast.csv') as csvfile:
-        spamreader = csv.reader(csvfile)
-        for row in spamreader:
+        reader = csv.reader(csvfile)
+        for row in reader:
             dataSet.add(', '.join(row))
 
     dataSet.discard("")

@@ -55,8 +55,28 @@
     - breakfast_form
     - form{"name": "breakfast_form"}
     - form{"name": null}
-
     - action_wipebreakfast
+
+## Add to breakfast list form stop but continue
+* addtobreakfast
+    - breakfast_form
+    - form{"name": "breakfast_form"}
+* stop
+    - utter_ask_continue
+* mood_deny
+    - breakfast_form
+    - form{"name": null}
+    
+## Add to breakfast list form stop
+* addtobreakfast
+    -breakfast_form
+    -form{"name": "breakfast_form"}
+* stop
+    - utter_ask_continue
+* mood_affirm
+    - action_deactivate_form
+    - form{"name": null}
+    - utter_stop
 
 ## test
 * test

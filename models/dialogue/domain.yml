@@ -1,30 +1,34 @@
 %YAML 1.1
 ---
 actions:
-- utter_greeting
-- utter_happy
-- utter_sad
-- utter_goodbye
+- action_wipebreakfast
 - action_weather
-- utter_test
-- action_test
-- utter_weather
-- utter_stop
-- utter_ask_continue
+- utter_greeting
 - utter_breakfast
 - action_suggestbreakfast
-- action_wipebreakfast
+- utter_sad
+- action_test
+- utter_test
+- utter_weather
+- utter_stop
+- utter_happy
+- utter_goodbye
+- utter_ask_continue
 config:
   store_entities_as_slots: true
 entities:
-- location
-- worklocation
 - homelocation
+- worklocation
 - breakfast
+- location
 forms:
 - commute_form
 - breakfast_form
 intents:
+- breakfast:
+    use_entities: true
+- addtobreakfast:
+    use_entities: true
 - greeting:
     use_entities: true
 - goodbye:
@@ -38,8 +42,6 @@ intents:
 - worklocation:
     use_entities: true
 - homelocation:
-    use_entities: true
-- addtobreakfast:
     use_entities: true
 - breakfastsuggestion:
     use_entities: true
