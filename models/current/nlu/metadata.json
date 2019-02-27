@@ -2,6 +2,16 @@
     "language": "en",
     "pipeline": [
         {
+            "dimensions": [
+                "time"
+            ],
+            "url": "http://localhost:8000",
+            "locale": "en_GB",
+            "timezone": "Europe/London",
+            "name": "ner_duckling_http",
+            "class": "rasa_nlu.extractors.duckling_http_extractor.DucklingHTTPExtractor"
+        },
+        {
             "model": "en",
             "case_sensitive": false,
             "name": "nlp_spacy",
@@ -86,6 +96,6 @@
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20190206-111321",
+    "trained_at": "20190226-171614",
     "rasa_nlu_version": "0.14.3"
 }

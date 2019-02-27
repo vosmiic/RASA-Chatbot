@@ -5,6 +5,9 @@
         "location"
       ]
     },
+    "action_suggestbreakfast": {
+      "slots": []
+    },
     "commute_form": {
       "slots": []
     },
@@ -14,28 +17,28 @@
     "utter_stop": {
       "slots": []
     },
-    "utter_goodbye": {
-      "slots": []
-    },
     "breakfast_form": {
       "slots": []
     },
     "action_wipebreakfast": {
       "slots": []
     },
-    "utter_sad": {
-      "slots": []
-    },
-    "action_suggestbreakfast": {
+    "utter_goodbye": {
       "slots": []
     },
     "action_test": {
       "slots": []
     },
-    "utter_breakfast": {
+    "action_search_database": {
       "slots": []
     },
     "action_weather": {
+      "slots": []
+    },
+    "utter_sad": {
+      "slots": []
+    },
+    "utter_test": {
       "slots": []
     },
     "utter_happy": {
@@ -56,7 +59,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190206-111304",
+  "trained_at": "20190226-171555",
   "rasa_core": "0.13.1",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

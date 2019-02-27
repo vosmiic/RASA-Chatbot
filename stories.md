@@ -69,8 +69,8 @@
     
 ## Add to breakfast list form stop
 * addtobreakfast
-    -breakfast_form
-    -form{"name": "breakfast_form"}
+    - breakfast_form
+    - form{"name": "breakfast_form"}
 * stop
     - utter_ask_continue
 * mood_affirm
@@ -78,8 +78,17 @@
     - form{"name": null}
     - utter_stop
 
+## Check calendar events
+* check_calendar
+    - action_get_date_value
+    - action_search_database
+    
+## Add to calendar
+* add_to_calendar
+    - action_add_to_calendar
+
 ## test
 * test
-    - action_wipebreakfast
-    - utter_breakfast
+    - action_get_date_value
+    - utter_test
 

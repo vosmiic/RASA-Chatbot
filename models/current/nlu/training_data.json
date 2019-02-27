@@ -694,6 +694,204 @@
         "text": "beans"
       },
       {
+        "intent": "check_calendar",
+        "entities": [
+          {
+            "start": 5,
+            "end": 25,
+            "value": "next thursday at 8pm",
+            "entity": "date"
+          }
+        ],
+        "text": "what next thursday at 8pm"
+      },
+      {
+        "intent": "check_calendar",
+        "entities": [
+          {
+            "start": 10,
+            "end": 25,
+            "value": "thursday at 1am",
+            "entity": "date"
+          }
+        ],
+        "text": "how about thursday at 1am"
+      },
+      {
+        "intent": "check_calendar",
+        "entities": [
+          {
+            "start": 6,
+            "end": 27,
+            "value": "21st of january, 2020",
+            "entity": "date"
+          }
+        ],
+        "text": "loool 21st of january, 2020 loool"
+      },
+      {
+        "intent": "check_calendar",
+        "entities": [
+          {
+            "start": 29,
+            "end": 44,
+            "value": "6th of february",
+            "entity": "date"
+          }
+        ],
+        "text": "what events do i have on the 6th of february?"
+      },
+      {
+        "intent": "check_calendar",
+        "entities": [
+          {
+            "start": 23,
+            "end": 38,
+            "value": "5th of december",
+            "entity": "date"
+          }
+        ],
+        "text": "whats happening on the 5th of december?"
+      },
+      {
+        "intent": "check_calendar",
+        "entities": [
+          {
+            "start": 16,
+            "end": 36,
+            "value": "next saturday at 6am",
+            "entity": "date"
+          }
+        ],
+        "text": "whats happening next saturday at 6am?"
+      },
+      {
+        "intent": "check_calendar",
+        "entities": [
+          {
+            "start": 21,
+            "end": 43,
+            "value": "26th of december, 1989",
+            "entity": "date"
+          }
+        ],
+        "text": "what happened on the 26th of december, 1989?"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 32,
+            "end": 52,
+            "value": "next thursday at 2pm",
+            "entity": "date"
+          }
+        ],
+        "text": "can you make an appointment for next thursday at 2pm?"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 37,
+            "end": 60,
+            "value": "25th of february at 7am",
+            "entity": "date"
+          }
+        ],
+        "text": "could you organise something for the 25th of february at 7am?"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 18,
+            "end": 37,
+            "value": "next tuesday at 4am",
+            "entity": "date"
+          }
+        ],
+        "text": "make an event for next tuesday at 4am"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 51,
+            "end": 62,
+            "value": "go shopping",
+            "entity": "eventText"
+          }
+        ],
+        "text": "on the [6th of march at 2pm], can you remind me to go shopping"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "next week",
+            "entity": "date"
+          },
+          {
+            "start": 31,
+            "end": 46,
+            "value": "pickup the kids",
+            "entity": "eventText"
+          }
+        ],
+        "text": "next week can you remind me to pickup the kids"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 20,
+            "end": 38,
+            "value": "27th of april 2019",
+            "entity": "date"
+          },
+          {
+            "start": 42,
+            "end": 57,
+            "value": "do the cleaning",
+            "entity": "eventText"
+          }
+        ],
+        "text": "make a note for the 27th of april 2019 to do the cleaning"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 27,
+            "end": 41,
+            "value": "5th of january",
+            "entity": "date"
+          }
+        ],
+        "text": "book an appointment on the 5th of january"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 34,
+            "end": 50,
+            "value": "26th of december",
+            "entity": "date"
+          },
+          {
+            "start": 68,
+            "end": 82,
+            "value": "do the washing",
+            "entity": "eventText"
+          }
+        ],
+        "text": "can you create an appointment for 26th of december and remind me to do the washing"
+      },
+      {
         "intent": "mood_deny",
         "text": "no"
       },

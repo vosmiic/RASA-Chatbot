@@ -17,12 +17,17 @@ intents:
 - mood_deny
 - stop
 - workdistance
+- check_calendar
+- add_to_calendar
 
 entities:
 - homelocation
 - worklocation
 - breakfast
 - location
+- date
+- formattedDate
+- eventText
 
 slots:
    breakfast:
@@ -40,31 +45,71 @@ slots:
    worklocation:
      auto_fill: false
      type: unfeaturized
+   date:
+     type: text
+   dockerdate:
+     type: text
+   formattedDate:
+     type: text
+   eventText:
+     type: text
 
 
 templates:
   utter_ask_breakfast:
   - text: Please enter your breakfast suggestion
+  - text: Please enter the meal you would like to add
   utter_ask_continue:
   - text: Are you sure you want to stop this?
+  - text: Are you certain you want to stop this process?
+  - text: Do you really want to stop this?
   utter_ask_homelocation:
   - text: Please enter the postcode of your home
+  - text: Please enter the location of your home, postcode is most reliable
   utter_ask_worklocation:
   - text: Please enter the postcode of your work
+  - text: Please enter the location of your work, postcode is most reliable
   utter_breakfast:
   - text: '{breakfast}'
   utter_goodbye:
   - text: Goodbye!
+  - text: See ya!
+  - text: See you next time!
+  - text: Thanks for chatting!
+  - text: Bye! See you next time!
+  - text: Bye!
   utter_greeting:
+  - text: Hello!
+  - text: Hi!
+  - text: Greetings!
   - text: Hello! How are you feeling today?
+  - text: Hi! How are you feeling today?
+  - text: Greetings! How are you feeling today?
   utter_happy:
   - text: Great! I hope you stay happy.
+  - text: Perfect! That's great.
+  - text: Cool! Me too!
   utter_sad:
   - text: Oh that isn't good! I hope you feel better later.
+  - text: Oh no :( I hope you feel better soon.
+  - text: That isn't good. Can my services cheer you up?
+  utter_anything_else:
+  - text: You're welcome! Is there anything else you need help with today?
+  - text: No problem! Is there anything else you need help with today?
+  utter_help:
+  - text: Okay, there are many ways I can help you. What do you need help with specifically?
+  - text: Great! What can I help you with?
+  utter_real:
+  - text: That is for me to know, and for you to find out :)
+  - text: How do I know I am not talking to a computer or robot?
+  - text: <debug mode activated> Registered user action... just kidding, what do you need help with today?
+  - text: What a question... a question which I cannot answer unfortunately. Do you need help with anything today?
   utter_stop:
   - text: I understand, stopping
+  - text: Okay, stopping
+  - text: Stopping
   utter_test:
-  - text: 'Slot value: {worklocation}'
+  - text: 'Slot value: {date} and {formattedDate}'
   utter_weather:
   - text: '{weather}'
 
@@ -82,6 +127,9 @@ actions:
 - utter_happy
 - utter_goodbye
 - utter_ask_continue
+- action_get_date_value
+- action_search_database
+- action_add_to_calendar
 
 forms:
 - commute_form

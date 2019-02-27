@@ -8,6 +8,8 @@ from .getWeather import getLocationWeather
 from .getLocation import getAPI
 from .getMapsDistance import getDistance
 from .breakfastSuggestion import getRandom, addToCsv
+from .formatteddate import getDate
+from .calendar import searchDatabase, addToDatabase
 
 
 class ActionWeather(Action):
@@ -83,10 +85,9 @@ class BreakfastForm(FormAction):
         return ["breakfast"]
 
     def submit(self, dispatcher, tracker, domain):
+
         dispatcher.utter_message(addToCsv(tracker.get_slot("breakfast")))
-        #for slot in tracker.slots:
-        #    if slot == tracker.get_slot("breakfast"):
-        #        SlotSet(slot, None)
+
         return []
 
 
@@ -101,3 +102,40 @@ class ActionWipeBreakfastSlot(Action):
             ):
 
         return [SlotSet("breakfast", None)]
+
+
+class ActionGetDateValue(Action):
+    def name(self):
+        return "action_get_date_value"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        return [SlotSet("formattedDate", getDate(tracker.get_slot("date")))]
+
+
+class ActionSearchDatabase(Action):
+    def name(self):
+        return "action_search_database"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        dispatcher.utter_message(searchDatabase(tracker.get_slot("formattedDate")))
+        return []
+
+class ActionAddToCalendar(Action):
+    def name(self):
+        return "action_add_to_calendar"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        dispatcher.utter_message(addToDatabase(tracker.get_slot("formattedDate")))
+        return []

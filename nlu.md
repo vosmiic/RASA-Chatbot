@@ -100,6 +100,25 @@
 - [weetbix](breakfast)
 - [beans](breakfast)
 
+## intent:check_calendar
+- what [next thursday at 8pm](date)
+- how about [thursday at 1am](date)
+- loool [21st of january, 2020](date) loool
+- what events do i have on the [6th of february](date)?
+- whats happening on the [5th of december](date)?
+- whats happening [next saturday at 6am](date)?
+- what happened on the [26th of december, 1989](date)?
+
+## intent:add_to_calendar
+- can you make an appointment for [next thursday at 2pm](date)?
+- could you organise something for the [25th of february at 7am](date)?
+- make an event for [next tuesday at 4am](date)
+- on the [6th of march at 2pm], can you remind me to [go shopping](eventText)
+- [next week](date) can you remind me to [pickup the kids](eventText)
+- make a note for the [27th of april 2019](date) to [do the cleaning](eventText)
+- book an appointment on the [5th of january](date)
+- can you create an appointment for [26th of december](date) and remind me to [do the washing](eventText)
+
 ## intent:mood_deny
 - no
 - nah
