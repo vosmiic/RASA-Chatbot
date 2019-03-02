@@ -85,7 +85,9 @@
     
 ## Add to calendar
 * add_to_calendar
+    - action_get_date_value
     - action_add_to_calendar
+    - action_wipe_event_text
 
 ## test
 * test

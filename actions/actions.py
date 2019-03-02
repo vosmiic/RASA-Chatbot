@@ -137,5 +137,16 @@ class ActionAddToCalendar(Action):
             tracker,  # type: Tracker
             domain  # type:  Dict[Text, Any]
             ):
-        dispatcher.utter_message(addToDatabase(tracker.get_slot("formattedDate")))
+        dispatcher.utter_message(addToDatabase(tracker.get_slot("formattedDate"), tracker.get_slot("eventText")))
         return []
+
+class ActionWipeEventText(Action):
+    def name(self):
+        return "action_wipe_event_text"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        return [SlotSet("eventText", None)]

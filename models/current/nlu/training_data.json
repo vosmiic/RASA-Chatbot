@@ -817,13 +817,19 @@
         "intent": "add_to_calendar",
         "entities": [
           {
-            "start": 51,
-            "end": 62,
+            "start": 7,
+            "end": 26,
+            "value": "6th of march at 2pm",
+            "entity": "date"
+          },
+          {
+            "start": 49,
+            "end": 60,
             "value": "go shopping",
             "entity": "eventText"
           }
         ],
-        "text": "on the [6th of march at 2pm], can you remind me to go shopping"
+        "text": "on the 6th of march at 2pm, can you remind me to go shopping"
       },
       {
         "intent": "add_to_calendar",
@@ -890,6 +896,42 @@
           }
         ],
         "text": "can you create an appointment for 26th of december and remind me to do the washing"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 13,
+            "end": 27,
+            "value": "do the cooking",
+            "entity": "eventText"
+          },
+          {
+            "start": 35,
+            "end": 50,
+            "value": "3rd of november",
+            "entity": "date"
+          }
+        ],
+        "text": "remind me to do the cooking on the 3rd of november"
+      },
+      {
+        "intent": "add_to_calendar",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "get the kids",
+            "entity": "eventText"
+          },
+          {
+            "start": 28,
+            "end": 31,
+            "value": "4pm",
+            "entity": "date"
+          }
+        ],
+        "text": "make sure I get the kids at 4pm"
       },
       {
         "intent": "mood_deny",
