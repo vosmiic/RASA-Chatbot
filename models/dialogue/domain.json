@@ -1,6 +1,5 @@
 {
   "states": [
-    "intent_add_to_calendar",
     "intent_addtobreakfast",
     "intent_breakfast",
     "intent_breakfastsuggestion",
@@ -23,10 +22,8 @@
     "entity_location",
     "entity_date",
     "entity_formattedDate",
-    "entity_eventText",
     "slot_date_0",
     "slot_dockerdate_0",
-    "slot_eventText_0",
     "slot_formattedDate_0",
     "slot_location_0",
     "slot_weather_0",
@@ -52,7 +49,6 @@
     "prev_utter_ask_continue",
     "prev_action_get_date_value",
     "prev_action_search_database",
-    "prev_action_add_to_calendar",
     "prev_commute_form",
     "prev_breakfast_form",
     "active_form_commute_form",

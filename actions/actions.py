@@ -5,6 +5,7 @@ from rasa_core_sdk.forms import FormAction, REQUESTED_SLOT
 from rasa_core_sdk.events import SlotSet, UserUtteranceReverted
 
 from .getWeather import getLocationWeather
+from .getIPLocation import getIPWeather
 from .getLocation import getAPI
 from .getMapsDistance import getDistance
 from .breakfastSuggestion import getRandom, addToCsv
@@ -20,6 +21,18 @@ class ActionWeather(Action):
 
         dispatcher.utter_message(getLocationWeather(tracker.get_slot("location")))
 
+        return []
+
+class ActionIPWeather(Action):
+    def name(self):
+        return "action_get_weather_from_ip"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        dispatcher.utter_message(getIPWeather())
         return []
 
 

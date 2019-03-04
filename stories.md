@@ -18,6 +18,10 @@
 ## Weather
 * weather{"location": "Caracas"}
     - action_weather
+    
+## IP Weather
+* IPweather
+    - action_get_weather_from_ip
 
 ## How far long commute
 * workdistance

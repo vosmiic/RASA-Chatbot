@@ -116,6 +116,7 @@ templates:
 actions:
 - action_wipebreakfast
 - action_weather
+- action_get_weather_from_ip
 - utter_greeting
 - utter_breakfast
 - action_suggestbreakfast
@@ -130,6 +131,7 @@ actions:
 - action_get_date_value
 - action_search_database
 - action_add_to_calendar
+- action_wipe_event_text
 
 forms:
 - commute_form

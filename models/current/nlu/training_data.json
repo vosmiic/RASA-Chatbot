@@ -150,6 +150,38 @@
         "text": "New York weather"
       },
       {
+        "intent": "IPweather",
+        "text": "what is the weather like where I am"
+      },
+      {
+        "intent": "IPweather",
+        "text": "whats the weather like here"
+      },
+      {
+        "intent": "IPweather",
+        "text": "hows the weather where I am"
+      },
+      {
+        "intent": "IPweather",
+        "text": "show me the weather where I am"
+      },
+      {
+        "intent": "IPweather",
+        "text": "is it raining where I am?"
+      },
+      {
+        "intent": "IPweather",
+        "text": "is it sunny where I am?"
+      },
+      {
+        "intent": "IPweather",
+        "text": "is it raining here?"
+      },
+      {
+        "intent": "IPweather",
+        "text": "is it sunny here?"
+      },
+      {
         "intent": "workdistance",
         "text": "How long will my work journey take me today"
       },
@@ -697,37 +729,37 @@
         "intent": "check_calendar",
         "entities": [
           {
-            "start": 5,
-            "end": 25,
+            "start": 11,
+            "end": 31,
             "value": "next thursday at 8pm",
             "entity": "date"
           }
         ],
-        "text": "what next thursday at 8pm"
+        "text": "events for next thursday at 8pm"
       },
       {
         "intent": "check_calendar",
         "entities": [
           {
-            "start": 10,
-            "end": 25,
+            "start": 21,
+            "end": 36,
             "value": "thursday at 1am",
             "entity": "date"
           }
         ],
-        "text": "how about thursday at 1am"
+        "text": "any appointments for thursday at 1am?"
       },
       {
         "intent": "check_calendar",
         "entities": [
           {
-            "start": 6,
-            "end": 27,
+            "start": 29,
+            "end": 50,
             "value": "21st of january, 2020",
             "entity": "date"
           }
         ],
-        "text": "loool 21st of january, 2020 loool"
+        "text": "do I have anything on on the 21st of january, 2020?"
       },
       {
         "intent": "check_calendar",
@@ -829,7 +861,7 @@
             "entity": "eventText"
           }
         ],
-        "text": "on the 6th of march at 2pm, can you remind me to go shopping"
+        "text": "on the 6th of march at 2pm, can you remind me to go shopping?"
       },
       {
         "intent": "add_to_calendar",
@@ -847,7 +879,7 @@
             "entity": "eventText"
           }
         ],
-        "text": "next week can you remind me to pickup the kids"
+        "text": "next week can you remind me to pickup the kids?"
       },
       {
         "intent": "add_to_calendar",

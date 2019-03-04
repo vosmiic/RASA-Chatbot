@@ -29,6 +29,16 @@
 - show me the weather forecast for [California](location)
 - [New York](location) weather
 
+## intent:IPweather
+- what is the weather like where I am
+- whats the weather like here
+- hows the weather where I am
+- show me the weather where I am
+- is it raining where I am?
+- is it sunny where I am?
+- is it raining here?
+- is it sunny here?
+
 ## intent:workdistance
 - How long will my work journey take me today
 - How long will my work journey take me this morning

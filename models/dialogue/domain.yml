@@ -16,7 +16,6 @@ actions:
 - utter_ask_continue
 - action_get_date_value
 - action_search_database
-- action_add_to_calendar
 config:
   store_entities_as_slots: true
 entities:
@@ -26,7 +25,6 @@ entities:
 - location
 - date
 - formattedDate
-- eventText
 forms:
 - commute_form
 - breakfast_form
@@ -63,8 +61,6 @@ intents:
     use_entities: true
 - check_calendar:
     use_entities: true
-- add_to_calendar:
-    use_entities: true
 slots:
   breakfast:
     auto_fill: false
@@ -75,10 +71,6 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
   dockerdate:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.TextSlot
-  eventText:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
