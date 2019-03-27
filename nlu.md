@@ -131,6 +131,44 @@
 - remind me to [do the cooking](eventText) on the [3rd of november](date)
 - make sure I [get the kids](eventText) at [4pm](date)
 
+## intent:time
+- what is the time
+- whats the time
+- what time is it
+- time
+- time?
+- can you tell the time?
+- are you able to tell the time?
+- can you tell me the time?
+- whats the local time?
+- what time is it here?
+- what time is it where I am?
+
+## intent:date
+- what is the date?
+- whats the date?
+- what date is it?
+- what is today?
+- date
+- date?
+- can you tell me the date?
+- are you able to tell me the date?
+- what is the date where I am?
+- what is the date here?
+- what day is it?
+- what is the current date?
+- whats the current date?
+- do you have the date?
+- tell me the current date
+
+## intent:coin_flip
+- can you flip a coin for me?
+- fip a coin
+- coin flip
+- can you do a coin flip?
+- flip a coin for me
+- heads or tails?
+
 ## intent:mood_deny
 - no
 - nah

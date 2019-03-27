@@ -93,6 +93,14 @@
     - action_add_to_calendar
     - action_wipe_event_text
 
+## Get current time
+* time
+    - action_time
+    
+## Get current date
+* date
+    - action_date
+
 ## test
 * test
     - action_get_date_value

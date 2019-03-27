@@ -966,6 +966,110 @@
         "text": "make sure I get the kids at 4pm"
       },
       {
+        "intent": "time",
+        "text": "what is the time"
+      },
+      {
+        "intent": "time",
+        "text": "whats the time"
+      },
+      {
+        "intent": "time",
+        "text": "what time is it"
+      },
+      {
+        "intent": "time",
+        "text": "time"
+      },
+      {
+        "intent": "time",
+        "text": "time?"
+      },
+      {
+        "intent": "time",
+        "text": "can you tell the time?"
+      },
+      {
+        "intent": "time",
+        "text": "are you able to tell the time?"
+      },
+      {
+        "intent": "time",
+        "text": "can you tell me the time?"
+      },
+      {
+        "intent": "time",
+        "text": "whats the local time?"
+      },
+      {
+        "intent": "time",
+        "text": "what time is it here?"
+      },
+      {
+        "intent": "time",
+        "text": "what time is it where I am?"
+      },
+      {
+        "intent": "date",
+        "text": "what is the date?"
+      },
+      {
+        "intent": "date",
+        "text": "whats the date?"
+      },
+      {
+        "intent": "date",
+        "text": "what date is it?"
+      },
+      {
+        "intent": "date",
+        "text": "what is today?"
+      },
+      {
+        "intent": "date",
+        "text": "date"
+      },
+      {
+        "intent": "date",
+        "text": "date?"
+      },
+      {
+        "intent": "date",
+        "text": "can you tell me the date?"
+      },
+      {
+        "intent": "date",
+        "text": "are you able to tell me the date?"
+      },
+      {
+        "intent": "date",
+        "text": "what is the date where I am?"
+      },
+      {
+        "intent": "date",
+        "text": "what is the date here?"
+      },
+      {
+        "intent": "date",
+        "text": "what day is it?"
+      },
+      {
+        "intent": "date",
+        "text": "what is the current date?"
+      },
+      {
+        "intent": "date",
+        "text": "whats the current date?"
+      },
+      {
+        "intent": "date",
+        "text": "do you have the date?"
+      },
+      {
+        "intent": "date",
+        "text": "tell me the current date"
+      },
+      {
         "intent": "mood_deny",
         "text": "no"
       },

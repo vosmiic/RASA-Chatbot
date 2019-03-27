@@ -2,6 +2,7 @@ import googlemaps
 import urllib3
 import certifi
 import json
+from secrets import googleAPIKey
 
 http =urllib3.PoolManager(
     cert_reqs='CERT_REQUIRED',
@@ -12,8 +13,8 @@ http =urllib3.PoolManager(
 def getDistance(homelocation, worklocation):
     newhomelocation = homelocation.replace(" ", "")
     newworklocation = worklocation.replace(" ", "")
-    r = http.request('GET', 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins={0}&destinations={1}&key=AIzaSyCkzpmoi6YYMNyGQqp9qqcmEwwAGbdpaUY'
-                     .format(newhomelocation, newworklocation))
+    r = http.request('GET', 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins={0}&destinations={1}&key={2}'
+                     .format(newhomelocation, newworklocation, googleAPIKey))
     item = r.data.decode("utf-8")
     parsed_json = json.loads(item)
     return "Today it will take you {0} to get to work and is {1} away from your home."\

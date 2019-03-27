@@ -1,10 +1,11 @@
 import datetime
 import mysql.connector
+from secrets import mysqlPassword
 
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="Declan123!",
+    passwd=mysqlPassword,
     database="calendar",
     auth_plugin='mysql_native_password'
 )

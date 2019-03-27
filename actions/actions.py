@@ -11,6 +11,7 @@ from .getMapsDistance import getDistance
 from .breakfastSuggestion import getRandom, addToCsv
 from .formatteddate import getDate
 from .calendar import searchDatabase, addToDatabase
+from .getTime import getTime, getDate
 
 
 class ActionWeather(Action):
@@ -163,3 +164,38 @@ class ActionWipeEventText(Action):
             domain  # type:  Dict[Text, Any]
             ):
         return [SlotSet("eventText", None)]
+
+class ActionTime(Action):
+    def name(self):
+        return "action_time"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        dispatcher.utter_message(getTime())
+        return []
+
+class ActionDate(Action):
+    def name(self):
+        return "action_date"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        dispatcher.utter_message(getDate())
+        return []
+
+class ActionDate(Action):
+    def name(self):
+        return "action_flipcoin"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        dispatcher.utter_message

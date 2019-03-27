@@ -5,10 +5,7 @@
         "location"
       ]
     },
-    "utter_happy": {
-      "slots": []
-    },
-    "commute_form": {
+    "breakfast_form": {
       "slots": []
     },
     "action_deactivate_form": {
@@ -17,31 +14,46 @@
     "utter_stop": {
       "slots": []
     },
-    "breakfast_form": {
+    "utter_goodbye": {
       "slots": []
     },
-    "action_search_database": {
-      "slots": []
-    },
-    "utter_sad": {
-      "slots": []
-    },
-    "action_test": {
+    "commute_form": {
       "slots": []
     },
     "utter_test": {
       "slots": []
     },
-    "utter_goodbye": {
+    "action_date": {
+      "slots": []
+    },
+    "action_suggestbreakfast": {
+      "slots": []
+    },
+    "action_get_weather_from_ip": {
+      "slots": []
+    },
+    "action_wipe_event_text": {
+      "slots": []
+    },
+    "utter_happy": {
+      "slots": []
+    },
+    "utter_sad": {
       "slots": []
     },
     "action_wipebreakfast": {
       "slots": []
     },
+    "action_time": {
+      "slots": []
+    },
+    "action_test": {
+      "slots": []
+    },
     "action_weather": {
       "slots": []
     },
-    "action_suggestbreakfast": {
+    "action_search_database": {
       "slots": []
     }
   },
@@ -59,7 +71,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190221-111238",
+  "trained_at": "20190327-133354",
   "rasa_core": "0.13.1",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

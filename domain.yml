@@ -19,6 +19,8 @@ intents:
 - workdistance
 - check_calendar
 - add_to_calendar
+- time
+- date
 
 entities:
 - homelocation
@@ -132,6 +134,8 @@ actions:
 - action_search_database
 - action_add_to_calendar
 - action_wipe_event_text
+- action_time
+- action_date
 
 forms:
 - commute_form
