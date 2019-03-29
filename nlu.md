@@ -29,6 +29,18 @@
 - show me the weather forecast for [California](location)
 - [New York](location) weather
 
+## intent:rain_chance
+- is it going to rain today?
+- will it rain today?
+- i hope it doesen't rain today
+- i hope it does not rain today
+- can you tell me if it will rain today?
+- will there be rain today?
+- is it supposed to rain today?
+- does the forecast say rain today?
+- does the forecast predict rain today?
+- any chance of rain today?
+
 ## intent:IPweather
 - what is the weather like where I am
 - whats the weather like here
@@ -38,6 +50,12 @@
 - is it sunny where I am?
 - is it raining here?
 - is it sunny here?
+- whats the weather like where I am?
+- can you tell me what the weather is like where I am?
+- can you tell me the weather?
+- weather?
+- is the weather good enough for a bike ride?
+- is the weather good enough to go for a walk?
 
 ## intent:workdistance
 - How long will my work journey take me today
@@ -168,6 +186,10 @@
 - can you do a coin flip?
 - flip a coin for me
 - heads or tails?
+- can you flip a coin for me?
+- flip for me
+- can you do heads or tails?
+- tails or heads?
 
 ## intent:mood_deny
 - no

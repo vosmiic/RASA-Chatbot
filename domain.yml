@@ -21,6 +21,9 @@ intents:
 - add_to_calendar
 - time
 - date
+- coin_flip
+- rain_chance
+- IPweather
 
 entities:
 - homelocation
@@ -136,6 +139,8 @@ actions:
 - action_wipe_event_text
 - action_time
 - action_date
+- action_flipcoin
+- action_rain_chance
 
 forms:
 - commute_form

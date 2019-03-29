@@ -150,6 +150,46 @@
         "text": "New York weather"
       },
       {
+        "intent": "rain_chance",
+        "text": "is it going to rain today?"
+      },
+      {
+        "intent": "rain_chance",
+        "text": "will it rain today?"
+      },
+      {
+        "intent": "rain_chance",
+        "text": "i hope it doesen't rain today"
+      },
+      {
+        "intent": "rain_chance",
+        "text": "i hope it does not rain today"
+      },
+      {
+        "intent": "rain_chance",
+        "text": "can you tell me if it will rain today?"
+      },
+      {
+        "intent": "rain_chance",
+        "text": "will there be rain today?"
+      },
+      {
+        "intent": "rain_chance",
+        "text": "is it supposed to rain today?"
+      },
+      {
+        "intent": "rain_chance",
+        "text": "does the forecast say rain today?"
+      },
+      {
+        "intent": "rain_chance",
+        "text": "does the forecast predict rain today?"
+      },
+      {
+        "intent": "rain_chance",
+        "text": "any chance of rain today?"
+      },
+      {
         "intent": "IPweather",
         "text": "what is the weather like where I am"
       },
@@ -180,6 +220,30 @@
       {
         "intent": "IPweather",
         "text": "is it sunny here?"
+      },
+      {
+        "intent": "IPweather",
+        "text": "whats the weather like where I am?"
+      },
+      {
+        "intent": "IPweather",
+        "text": "can you tell me what the weather is like where I am?"
+      },
+      {
+        "intent": "IPweather",
+        "text": "can you tell me the weather?"
+      },
+      {
+        "intent": "IPweather",
+        "text": "weather?"
+      },
+      {
+        "intent": "IPweather",
+        "text": "is the weather good enough for a bike ride?"
+      },
+      {
+        "intent": "IPweather",
+        "text": "is the weather good enough to go for a walk?"
       },
       {
         "intent": "workdistance",
@@ -1068,6 +1132,46 @@
       {
         "intent": "date",
         "text": "tell me the current date"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "can you flip a coin for me?"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "fip a coin"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "coin flip"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "can you do a coin flip?"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "flip a coin for me"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "heads or tails?"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "can you flip a coin for me?"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "flip for me"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "can you do heads or tails?"
+      },
+      {
+        "intent": "coin_flip",
+        "text": "tails or heads?"
       },
       {
         "intent": "mood_deny",

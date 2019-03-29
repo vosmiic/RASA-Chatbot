@@ -4,14 +4,15 @@ from rasa_core_sdk import Action, Tracker
 from rasa_core_sdk.forms import FormAction, REQUESTED_SLOT
 from rasa_core_sdk.events import SlotSet, UserUtteranceReverted
 
-from .getWeather import getLocationWeather
-from .getIPLocation import getIPWeather
+from .getWeather import getLocationWeather, getRainChance
+from .getIPLocation import getIPWeather, getIPWeatherRain
 from .getLocation import getAPI
 from .getMapsDistance import getDistance
 from .breakfastSuggestion import getRandom, addToCsv
 from .formatteddate import getDate
 from .calendar import searchDatabase, addToDatabase
 from .getTime import getTime, getDate
+from .flipCoin import randomGenerator
 
 
 class ActionWeather(Action):
@@ -23,6 +24,17 @@ class ActionWeather(Action):
         dispatcher.utter_message(getLocationWeather(tracker.get_slot("location")))
 
         return []
+
+class ActionRainChance(Action):
+    def name(self):
+        return "action_rain_chance"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        dispatcher.utter_message(getIPWeatherRain())
 
 class ActionIPWeather(Action):
     def name(self):
@@ -198,4 +210,5 @@ class ActionDate(Action):
             tracker,  # type: Tracker
             domain  # type:  Dict[Text, Any]
             ):
-        dispatcher.utter_message
+        dispatcher.utter_message(randomGenerator())
+        return []

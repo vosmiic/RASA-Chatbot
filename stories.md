@@ -19,6 +19,10 @@
 * weather{"location": "Caracas"}
     - action_weather
     
+ ## Rain chance
+* rain_chance
+    - action_rain_chance
+    
 ## IP Weather
 * IPweather
     - action_get_weather_from_ip
@@ -100,6 +104,10 @@
 ## Get current date
 * date
     - action_date
+    
+## Flip a coin
+* coin_flip
+    - action_flipcoin
 
 ## test
 * test

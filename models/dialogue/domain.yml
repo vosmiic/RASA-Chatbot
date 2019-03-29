@@ -21,6 +21,8 @@ actions:
 - action_wipe_event_text
 - action_time
 - action_date
+- action_flipcoin
+- action_rain_chance
 config:
   store_entities_as_slots: true
 entities:
@@ -72,6 +74,12 @@ intents:
 - time:
     use_entities: true
 - date:
+    use_entities: true
+- coin_flip:
+    use_entities: true
+- rain_chance:
+    use_entities: true
+- IPweather:
     use_entities: true
 slots:
   breakfast:
