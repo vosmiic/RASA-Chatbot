@@ -190,6 +190,222 @@
         "text": "any chance of rain today?"
       },
       {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 29,
+            "end": 42,
+            "value": "next thursday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "what is the weather like for next thursday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 39,
+            "end": 46,
+            "value": "tuesday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "whats the weather going to be like for tuesday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 57,
+            "end": 71,
+            "value": "next wednesday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "can you tell me what the weather is going to be like for next wednesday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 53,
+            "end": 64,
+            "value": "next friday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "can you tell me what the weather is going to be like next friday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "friday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "hows the weather going to be on friday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 34,
+            "end": 49,
+            "value": "monday the 28th",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "hows the weather going to be like monday the 28th"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 24,
+            "end": 35,
+            "value": "next monday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "show me the weather for next monday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "thursday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "will it be sunny on thursday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": "next friday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "will it be sunny next friday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "monday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "will there be sun on monday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "friday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "is it going to rain on friday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 20,
+            "end": 31,
+            "value": "next monday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "is it going to rain next monday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 35,
+            "end": 44,
+            "value": "wednesday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "is the weather going to be good on wednesday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 32,
+            "end": 46,
+            "value": "next wednesday",
+            "entity": "weatherDate"
+          }
+        ],
+        "text": "is the weather going to be good next wednesday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 24,
+            "end": 30,
+            "value": "friday",
+            "entity": "date"
+          }
+        ],
+        "text": "you got the weather for friday?"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 43,
+            "end": 49,
+            "value": "monday",
+            "entity": "date"
+          }
+        ],
+        "text": "hey, whats the weather going to be like on monday?"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "sunday",
+            "entity": "date"
+          }
+        ],
+        "text": "weather for sunday"
+      },
+      {
+        "intent": "weather_variable",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "saturday",
+            "entity": "date"
+          }
+        ],
+        "text": "weather saturday"
+      },
+      {
         "intent": "IPweather",
         "text": "what is the weather like where I am"
       },
@@ -404,6 +620,18 @@
       {
         "intent": "test",
         "text": "testong"
+      },
+      {
+        "intent": "test",
+        "text": "taest"
+      },
+      {
+        "intent": "test",
+        "text": "testpls"
+      },
+      {
+        "intent": "test",
+        "text": "tetaeast"
       },
       {
         "intent": "postcode",
@@ -872,6 +1100,30 @@
           }
         ],
         "text": "what happened on the 26th of december, 1989?"
+      },
+      {
+        "intent": "check_calendar",
+        "entities": [
+          {
+            "start": 35,
+            "end": 51,
+            "value": "28th of december",
+            "entity": "date"
+          }
+        ],
+        "text": "can you show me what I have on for 28th of december?"
+      },
+      {
+        "intent": "check_calendar",
+        "entities": [
+          {
+            "start": 31,
+            "end": 45,
+            "value": "next wedensday",
+            "entity": "date"
+          }
+        ],
+        "text": "can you show me what I have on next wedensday?"
       },
       {
         "intent": "add_to_calendar",

@@ -23,6 +23,8 @@ actions:
 - action_date
 - action_flipcoin
 - action_rain_chance
+- action_get_weather_date
+- action_weather_date
 config:
   store_entities_as_slots: true
 entities:
@@ -81,6 +83,8 @@ intents:
     use_entities: true
 - IPweather:
     use_entities: true
+- weather_variable:
+    use_entities: true
 slots:
   breakfast:
     auto_fill: false
@@ -102,6 +106,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  formattedWeatherDate:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   homelocation:
     auto_fill: false
     initial_value: null
@@ -115,6 +123,10 @@ slots:
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
   weather:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  weatherDate:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot

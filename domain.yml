@@ -24,6 +24,7 @@ intents:
 - coin_flip
 - rain_chance
 - IPweather
+- weather_variable
 
 entities:
 - homelocation
@@ -57,6 +58,10 @@ slots:
    formattedDate:
      type: text
    eventText:
+     type: text
+   weatherDate:
+     type: text
+   formattedWeatherDate:
      type: text
 
 
@@ -141,6 +146,8 @@ actions:
 - action_date
 - action_flipcoin
 - action_rain_chance
+- action_get_weather_date
+- action_weather_date
 
 forms:
 - commute_form

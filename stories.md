@@ -26,6 +26,10 @@
 ## IP Weather
 * IPweather
     - action_get_weather_from_ip
+    
+## Weather Date
+* weather_variable
+    - action_weather_date
 
 ## How far long commute
 * workdistance
@@ -111,6 +115,5 @@
 
 ## test
 * test
-    - action_get_date_value
-    - utter_test
+    - action_test
 

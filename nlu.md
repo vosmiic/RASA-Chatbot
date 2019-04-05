@@ -41,6 +41,26 @@
 - does the forecast predict rain today?
 - any chance of rain today?
 
+## intent:weather_variable
+- what is the weather like for [next thursday](weatherDate)
+- whats the weather going to be like for [tuesday](weatherDate)
+- can you tell me what the weather is going to be like for [next wednesday](weatherDate)
+- can you tell me what the weather is going to be like [next friday](weatherDate)
+- hows the weather going to be on [friday](weatherDate)
+- hows the weather going to be like [monday the 28th](weatherDate)
+- show me the weather for [next monday](weatherDate)
+- will it be sunny on [thursday](weatherDate)
+- will it be sunny [next friday](weatherDate)
+- will there be sun on [monday](weatherDate)
+- is it going to rain on [friday](weatherDate)
+- is it going to rain [next monday](weatherDate)
+- is the weather going to be good on [wednesday](weatherDate)
+- is the weather going to be good [next wednesday](weatherDate)
+- you got the weather for [friday](date)?
+- hey, whats the weather going to be like on [monday](date)?
+- weather for [sunday](date)
+- weather [saturday](date)
+
 ## intent:IPweather
 - what is the weather like where I am
 - whats the weather like here
@@ -79,6 +99,9 @@
 - tester
 - tast
 - testong
+- taest
+- testpls
+- tetaeast
 
 ## intent:postcode
 - [BN25 2DS](worklocation)
@@ -136,6 +159,8 @@
 - whats happening on the [5th of december](date)?
 - whats happening [next saturday at 6am](date)?
 - what happened on the [26th of december, 1989](date)?
+- can you show me what I have on for [28th of december](date)?
+- can you show me what I have on [next wedensday](date)?
 
 ## intent:add_to_calendar
 - can you make an appointment for [next thursday at 2pm](date)?

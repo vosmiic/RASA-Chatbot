@@ -4,12 +4,12 @@ from rasa_core_sdk import Action, Tracker
 from rasa_core_sdk.forms import FormAction, REQUESTED_SLOT
 from rasa_core_sdk.events import SlotSet, UserUtteranceReverted
 
-from .getWeather import getLocationWeather, getRainChance
-from .getIPLocation import getIPWeather, getIPWeatherRain
+from .getWeather import getLocationWeather, getRainChance, getForecast
+from .getIPLocation import getIPWeather, getIPWeatherRain, getIP
 from .getLocation import getAPI
 from .getMapsDistance import getDistance
 from .breakfastSuggestion import getRandom, addToCsv
-from .formatteddate import getDate
+from .formatteddate import getDate, testGetDate
 from .calendar import searchDatabase, addToDatabase
 from .getTime import getTime, getDate
 from .flipCoin import randomGenerator
@@ -25,6 +25,7 @@ class ActionWeather(Action):
 
         return []
 
+
 class ActionRainChance(Action):
     def name(self):
         return "action_rain_chance"
@@ -35,6 +36,7 @@ class ActionRainChance(Action):
             domain  # type:  Dict[Text, Any]
             ):
         dispatcher.utter_message(getIPWeatherRain())
+
 
 class ActionIPWeather(Action):
     def name(self):
@@ -49,12 +51,37 @@ class ActionIPWeather(Action):
         return []
 
 
+class ActionGetWeatherDate(Action):
+    def name(self):
+        return "action_get_weather_date"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):
+        return [SlotSet("formattedWeatherDate"), testGetDate(tracker.get_slot("weatherDate"))] #set formattedWeatherDate to a formmated date using docker by sending the date we retrieve from the user to our nlu
+
+
+class ActionWeatherDate(Action):
+    def name(self):
+        return "action_weather_date"
+
+    def run(self,
+            dispatcher,  # type: CollectingDispatcher
+            tracker,  # type: Tracker
+            domain  # type:  Dict[Text, Any]
+            ):  # type: (...) -> List[Dict[Text, Any]]
+        dispatcher.utter_message(getForecast(testGetDate(tracker.get_slot("weatherDate")), getIP()))
+        return []
+
+
 class ActionTest(Action):
     def name(self):
         return "action_test"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message("Successful test")
+        dispatcher.utter_message(testGetDate(tracker.get_slot("weatherDate")))
         return []
 
 
@@ -139,7 +166,7 @@ class ActionGetDateValue(Action):
             tracker,  # type: Tracker
             domain  # type:  Dict[Text, Any]
             ):
-        return [SlotSet("formattedDate", getDate(tracker.get_slot("date")))]
+        return [SlotSet("formattedDate", testGetDate(tracker.get_slot("date")))]
 
 
 class ActionSearchDatabase(Action):

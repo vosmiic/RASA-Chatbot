@@ -7,7 +7,7 @@
 language: en
 pipeline:
 - name: "ner_duckling_http"
-  url: "http://localhost:8000"
+  url: "http://0.0.0.0:8000"
   dimensions: ["time"]
   locale: "en_GB"
   timezone: "Europe/London"
